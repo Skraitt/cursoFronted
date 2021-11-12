@@ -1,0 +1,39 @@
+.nav_item {
+  color: aqua
+}
+
+.header{
+  display: flex;
+  background-color: blueviolet;
+}
+
+.logo:hover{
+  cursor: pointer;
+  background-color: red;
+}
+
+.logo{
+  display: flex;
+}
+.logo_imag{
+  height: 50px;
+  width: 50px;
+}
+.nav{
+  width: 100%;
+}
+
+.nav_list{
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
+
+.nav_link{
+  color: black;
+  text-decoration: none;
+}
+
+.nav_link:hover{
+  text-decoration: underline;
+}

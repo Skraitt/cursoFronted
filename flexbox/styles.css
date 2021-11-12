@@ -1,0 +1,58 @@
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+body{
+    display:flex;
+    flex-direction: column;
+    height: 100vh; /*hv es una medida relativa a el contenido mostrado en patalla, es como el porcentaje pero siendo 100 igual al 100% de la pantalla. */
+    font-size: 16px; 
+}
+
+.header{
+    outline: 2px solid aqua;
+    height: 3rem; /* Rem medida relatima al tamaño de la letra estandat del documento. */
+}
+
+.menu{
+    display: flex;
+}
+
+.menu-item{
+    list-style: none;
+    flex: 1;
+    outline: 1px solid aqua;
+    text-align: center;
+    line-height: 3rem;
+    transition: flex .75s;
+}
+
+.menu-item:hover{
+    flex:6;
+}
+
+.container{
+    outline: 2px solid blueviolet;
+    display: flex; 
+    height: inherit;
+}
+
+.content{
+    outline: 2px solid burlywood;
+    flex: 1; /* flex: 1 1 auto; */
+}
+
+.aside{
+    outline: 2px solid red;
+    flex: 0 0 25%; /* factorDeCrecimiento factorDeEncojimiento width */
+}
+
+.footer{
+    outline: 2px solid brown;
+    height: 6rem;
+    margin-top: auto;
+    outline: 2px solid 
+}

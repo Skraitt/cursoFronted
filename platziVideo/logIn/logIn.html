@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Platzi: log In</title>
+    <link href="logIn.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <header class="header">
+        <img tabindex="0" class="header__img" src="/assets/logo-platzi.png" alt="Platzi Video">
+    </header>
+        <section class="login">
+            <section class="login__container">
+                <h2 tabindex="0">Log In</h2>
+                <form class="login__container--form">
+                    <input aria-label="Account" class="input" type="text" placeholder="Account">
+                    <input aria-label="Password" class="input" type="password" placeholder="Password">
+                    <button class="button" onclick="location.href='/bugPage/bugPage.html'">Log In</button>
+                    <div class="login__container--remember-me">
+                        <label>
+                            <input type="checkbox" name="" id="cbox1" value="checkbox">remember me 
+                        </label>
+                        <a href="/bugPage/bugPage.html">I forgot my password</a>
+                    </div>
+                </form>
+                <section class="login__container--social-media">
+                    <div><img src="/assets/google-icon.webp" alt="Google">Login with Google</div>
+                    <div><img src="/assets/twitter-icon.webp" alt="Twitter">Login with Twitter</div>
+                </section>
+                <p class="login__container--register">You do not have an account<a href="/signIn/signIn.html"> Sign up</a></p>
+            </section>  
+        </section>
+        <footer class="footer">
+            <a href="/bugPage/bugPage.html">Terms and condition</a>
+            <a href="/bugPage/bugPage.html">Policies and privacy</a>
+            <a href="/bugPage/bugPage.html">Contact us</a>
+        </footer>
+</body>
+</html>

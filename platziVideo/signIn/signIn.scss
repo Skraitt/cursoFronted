@@ -1,0 +1,133 @@
+$greenPlatzi: #21c08b;
+$purplePlatzi: #ab88ff;
+
+body {
+    margin: 0;
+    font-family: 'Muli', sans-serif;
+}
+
+.header{
+    align-items: center;
+    width: 100%;
+    background-color: $greenPlatzi;
+}
+
+.header img{
+    width: 200px;
+    padding: 30px;
+}
+
+.signup{
+    background: linear-gradient($greenPlatzi,$purplePlatzi);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: calc(100vh - 200px);
+    color: white;
+
+}
+
+.signup__container{
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    border: 2px solid white;
+    border-radius: 40px;
+    padding: 68px 30px 40px;
+    min-height: 700px;
+    width: 400px;
+    -webkit-box-shadow: -15px 22px 30px -10px rgba(0,0,0,0.75);
+    -moz-box-shadow: -15px 22px 30px -10px rgba(0,0,0,0.75);
+    box-shadow: -15px 22px 30px -10px rgba(0,0,0,0.75);
+}
+
+.signup__container--form{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+}
+
+.input{
+    background-color: transparent;
+    border-bottom: 2px solid white;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    font-family: 'Muli', sans-serif;
+    font-size: 16px;
+    padding: 20px 20px;
+    margin-bottom: 50px;
+    color:white;
+    outline:none;
+    font-weight: bold;
+}
+
+.input::placeholder{
+    color: white;
+}
+
+.button{
+    background-color: rgba(225,225,225,0.1);
+    color: white;
+    height: 50px;
+    border-radius: 25px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-family: 'Muli', sans-serif;
+    font-size: 16px;
+    margin: 10px 0px;
+    cursor: pointer;
+    width: 300px;
+}
+
+.signup__container a{
+    color:white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.signup__container a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.footer{
+    background-color: $purplePlatzi;
+    display: flex;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+}
+
+.footer a{
+    font-size: 14px;
+    color:white;
+    cursor:pointer;
+    padding-left: 30px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+.footer a:hover{
+    text-decoration: underline;
+}
+
+@media only screen and (max-width:600px){
+    .signup__container{
+      background-color: transparent;
+      border: none;
+      padding: 0px;
+      width: 100%;
+      -webkit-box-shadow: none;
+      -moz-box-shadow: none;
+      box-shadow: none; 
+    }
+
+    .footer{
+      align-items: flex-start;
+      flex-direction: column;
+
+    }
+  }
